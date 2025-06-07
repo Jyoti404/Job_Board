@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './Components/auth/Login'
-import Signup from './Components/auth/Signup'
+import Login from './Components/Auth/Login'
+import Signup from './Components/Auth/Signup'
 import Home from './Components/Home'
 import Jobs from './Components/Jobs'
 import Browse from './Components/Browse'
