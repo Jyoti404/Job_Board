@@ -141,6 +141,7 @@ const Signup = () => {
                         <div className='flex items-center gap-2'>
                             <Label>Profile</Label>
                             <Input
+                                name="file"
                                 accept="image/*"
                                 type="file"
                                 onChange={changeFileHandler}

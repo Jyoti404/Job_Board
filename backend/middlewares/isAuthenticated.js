@@ -1,4 +1,6 @@
 import jwt from "jsonwebtoken";
+// import { singleUpload } from "../middlewares/multer.js";
+
 const isAuthenticated=async(req,res,next)=>{
     
     try{

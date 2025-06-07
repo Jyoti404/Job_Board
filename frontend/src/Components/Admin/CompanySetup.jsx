@@ -135,6 +135,7 @@ const CompanySetup = () => {
         <div>
             <Label>Logo</Label>
             <Input
+                name="file"
                 type="file"
                 accept="image/*"
                 onChange={changeFileHandler}

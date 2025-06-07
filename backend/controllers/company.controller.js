@@ -80,6 +80,12 @@ export const updateCompany = async (req, res) => {
  
         const file = req.file;
         //cloudinary
+        if (!file) {
+    return res.status(400).json({
+        message: "Company logo/image file is required.",
+        success: false
+    });
+}
         const fileUri = getDataUri(file);
         const cloudResponse = await cloudinary.uploader.upload(fileUri.content);
         const logo = cloudResponse.secure_url;
